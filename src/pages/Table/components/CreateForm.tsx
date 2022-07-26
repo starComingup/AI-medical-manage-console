@@ -1,5 +1,6 @@
 import { Modal } from 'antd';
-import React, { PropsWithChildren } from 'react';
+import type React from 'react';
+import type { PropsWithChildren } from 'react';
 
 interface CreateFormProps {
   modalVisible: boolean;
@@ -12,7 +13,7 @@ const CreateForm: React.FC<PropsWithChildren<CreateFormProps>> = (props) => {
   return (
     <Modal
       destroyOnClose
-      title="新建"
+      title="新建记录"
       width={420}
       visible={modalVisible}
       onCancel={() => onCancel()}
